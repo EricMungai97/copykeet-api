@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "builds": [{ "src": "copykitt_api.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/.*", "dest": "/copykitt_api.py" }]
+}
