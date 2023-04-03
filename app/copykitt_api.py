@@ -14,22 +14,27 @@ app.add_middleware(
 )
 
 
+@app.get("/")
+async def root():
+    return {"message": "Welcome to CopyKitt"}
+
+
 @app.get("/generate_snippet")
-def generate_snippet_api(prompt: str):
+async def generate_snippet_api(prompt: str):
     validate_input_length(prompt)
     snippet = generate_branding_snippet(prompt)
     return {"Snippet": f"{snippet}"}
 
 
 @app.get("/generate_keywords")
-def generate_keywords_api(prompt: str):
+async def generate_keywords_api(prompt: str):
     validate_input_length(prompt)
     keywords = generate_keywords(prompt)
     return {"Keywords": keywords}
 
 
 @app.get("/generate_snippets_and_keywords")
-def generate_keywords_api(prompt: str):
+async def generate_keywords_api(prompt: str):
     validate_input_length(prompt)
     snippet = generate_branding_snippet(prompt)
     keywords = generate_keywords(prompt)
