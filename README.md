@@ -26,18 +26,12 @@ Hosted on [Vercel](https://copykitt-three.vercel.app/)
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository: `git clone https://github.com/EricMungai97/copykeet.git`
 
-`git clone https://github.com/EricMungai97/copykeet.git`
-
-2. Install the dependencies.
-
-```cd copykitt``` 
+2. Install the dependencies: ```cd copykitt``` 
 ```npm install```
 
-3. Run the development server:
-
-```npm run dev```
+3. Run the development server: ```npm run dev```
 
 4. Open `http://localhost:3000/` with your browser to see your application.
 
